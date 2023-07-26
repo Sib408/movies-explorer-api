@@ -33,6 +33,7 @@ app.use(cors({
     'https://sib408.movies.nomoredomains.xyz',
   ],
   credentials: true,
+  maxAge: 300,
 }));
 app.use(router);
 app.use(errorLogger);
