@@ -7,6 +7,7 @@ const {
 const { validateEditUser } = require('../utils/validation');
 
 usersRouter.get('/me', getUserById);
+
 usersRouter.patch('/me', validateEditUser, editUser);
 
 module.exports = usersRouter;

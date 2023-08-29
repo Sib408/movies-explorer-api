@@ -5,7 +5,8 @@ const STATUS_CREATED = 201; // 201
 const ERROR_SERVER = http2.constants.HTTP_STATUS_INTERNAL_SERVER_ERROR; // 500
 
 const limiterSetting = {
-  windowMs: 15 * 60 * 10000,
+  windowMs: 15 * 60 * 1000,
+  max: 1000,
   standardHeaders: true,
   legacyHeaders: false,
 };
